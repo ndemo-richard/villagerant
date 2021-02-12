@@ -1,0 +1,28 @@
+//components/Layout.scss
+
+.Layout{
+    flex:1;
+    flex-direction:column;
+    background-color:inherit;
+    //background-image:linear-gradient(to bottom, rgba(29,30,35, 2), rgba(0, 0, 0, 0.493)),url("/img/dontthink.jpg");
+
+    content{
+        flex:1;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        color:inherit;
+        font-family: 'Courier New', Courier, monospace;
+
+        a{
+            color:inherit;
+        }
+    }
+
+}
+
+//media queries
+
+@media screen and (max-width:768px){
+    
+}

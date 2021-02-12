@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2? family=Dancing+Script&family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+// index scss file
+.container {
+  width:100%;
+  height: 100%;
+  background-color: ivory;
+  max-width: calc(100vw - 2rem);
+
+.main{
+  padding-top:6rem;
+}
+.main h1, .main h3 {
+  text-align: center;
+  font-family: 'Yusei Magic', sans-serif;
+}
+.myblog_title{
+  font-weight: 900;
+  color:#c75d20;
+
+}
+.myblog_description{
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  color: #23232b;
+}
+.feed {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+
+}
+.post {
+  margin: 25px;
+  width: 350px;
+  height: 100%;
+  background-color: rgb(250, 250, 250);
+  cursor: pointer;
+  text-align: center;
+  max-width: calc(100vw - 50px);
+  box-shadow: 2px 2px 10px #246756;
+  border-radius: 25px;
+
+  h4{
+    font-size: 0.7rem;
+    font-family: 'Yusei Magic', sans-serif;
+    color: #ee6677;
+  }
+  .post_title{
+    font-weight: 900;
+    font-family: 'Playfair Display', serif;
+    text-transform: capitalize;
+    color:#50505a;
+    font-size: 1.5rem;
+  }
+  .blocks{
+    font-family: 'Yusei Magic', sans-serif;
+    color:#444444;
+    font-size: 1.2rem;
+  }
+  .avatar_date{
+    display: flex;
+    flex-direction: row;
+    padding-left: 0.5rem;
+  }
+}
+.mainImage {
+  width: 100%;
+  transition: 0.2s;
+  border-radius: 25px;
+
+
+}
+
+
+
+.box {
+
+  input {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  p {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  input:focus ~ label {
+    outline: -webkit-focus-ring-color auto 5px;
+  }
+
+  input:checked + p {
+    -webkit-line-clamp: unset;
+  }
+
+  input:checked ~ label {
+    display: none;
+  }
+
+}
+.box {
+  background-color:inherit;
+  //box-shadow: 2px 2px 10px #246756;
+  padding: 2em;
+  padding-top: 0;
+  width: 100%;
+  max-width: calc(100vw - 20%);
+
+  p {
+    margin: 0;
+  }
+
+  label {
+    border-radius: 4px;
+    padding: 0.2em 0.6em;
+  //  border: 1px solid #009ce2;
+    //background-color: #00acff;
+    color: #ee6677;
+    font-size: 0.8em;
+  }
+}
+.noPost{
+  width:100%;
+  max-width: calc(100vw - 20%);
+  height: 100%;
+  background-image:linear-gradient(to bottom, rgba(29,30,35, 2), rgba(0, 0, 0, 0.493));
+}
+
+
+}
+
+
+
+@media (max-width:768px){
+  .container {
+    width:100%;
+    height: 100%;
+    background-color:inherit;
+    max-width: calc(100vw - 2rem);
+
+  .main{
+    padding-top:6rem;
+
+  }
+  .main h1, .main h3 {
+    text-align: center;
+    font-family: 'Yusei Magic', sans-serif;
+  }
+  .myblog_description{
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+    font-weight: 200;
+    font-size: 0.7rem;
+    color: #23232b;
+  }
+  .feed {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .post {
+    margin: 25px;
+    width: 350px;
+    height: 100%;
+    cursor: pointer;
+    text-align: center;
+    max-width: calc(100vw - 50px);
+    box-shadow: none;
+  border-radius: 0;
+  }
+  .mainImage {
+    width: 100%;
+    transition: 0.2s;
+    border-radius: 5px;
+    max-width: calc(100vw - 50px);
+    box-shadow: none;
+  }
+  }
+}

@@ -1,0 +1,120 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: inherit;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+/*Below Styles for the burger menu*/
+/* Position and sizing of burger button */
+/* Position and sizing of burger button */
+
+.bm-burger-button {
+  position: absolute;
+  width: 36px;
+  height: 30px;
+  right:36px ;
+  top: 36px;
+ /* display: none;*/
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #e67331;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+  position:relative;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: absolute;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background-image:linear-gradient(to bottom, rgba(29,30,35, 2), rgba(0, 0, 0, 0.493)),url("/img/dontthink.jpg");
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em; 
+  width: 100%;
+  height: 100%;
+  
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: flex;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+/*  loading css*/
+.loadingContainer{
+  position: fixed;
+
+  background-image:linear-gradient(to bottom, rgba(29,30,35, 2), rgba(29, 18, 18, 0.24));
+  width:100%;
+  height: 100%;  
+}
+.loadingProp{
+  position: fixed;
+  margin: 0 auto;
+  left:50%;
+  top: 50%;
+  transform: translateX(-50%);
+  color:ivory;
+  -webkit-text-stroke: 1px black;
+}
+
+@media(max-width:768px){
+
+  .bm-burger-button {
+    position: absolute;
+    width: 30px;
+    height: 26px;
+    right: 20px;
+    top: 20px;
+  }
+
+}
