@@ -30,6 +30,7 @@ export default function Form ({_id}) {
     return (
     <>
       <h3>Thanks for your comment!</h3>
+      <p>Awaiting approval from the admin</p>
       <ul>
         <li>
           Name: {formData.name} <br />
@@ -114,7 +115,7 @@ export default function Form ({_id}) {
         margin:auto;
         margin-bottom:3rem;
         width:8rem;
-        background-color: #f7b31c;
+        background-color:#e67331;
         color: white; 
         border-radius: 15px; 
         font-style: italic; 
