@@ -63,6 +63,9 @@ export const Post = ({ _id, title, body, image,publishedAt, authorImage, authorN
                   
                   </div> 
             </div>
+            <div>
+                
+            </div>
         </div>
         </Layout>
 
