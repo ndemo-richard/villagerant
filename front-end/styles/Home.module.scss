@@ -58,7 +58,10 @@
   .blocks{
     font-family: 'Yusei Magic', sans-serif;
     color:#444444;
+    width:100%;
+    height: 150px;
     font-size: 1.2rem;
+    overflow: hidden;
   }
   .avatar_date{
     display: flex;
@@ -70,8 +73,6 @@
   width: 100%;
   transition: 0.2s;
   border-radius: 25px;
-
-
 }
 
 
@@ -88,6 +89,7 @@
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
+   
     overflow: hidden;
   }
 
