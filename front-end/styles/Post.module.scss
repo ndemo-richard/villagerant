@@ -34,16 +34,16 @@
     margin: auto;
     margin-left: 25%;
 
-}
-       
+}      
 .body p {
-    text-indent: 50px;
-    line-height: 45px;
+    text-indent: 1px;
+    line-height: 1.4em;
     text-align: justify;
-    letter-spacing: 1.5px;
+    letter-spacing: 0.02em;
     font-family: 'Yusei Magic', sans-serif;
     color:#292828;
-    font-size: 1.2rem;
+    margin: 0;
+    font-size: 1.3em;
 }
 .avatarContainer{
     display:flex;
@@ -128,12 +128,13 @@
            
     .body p {
         text-indent: 1px;
-        line-height: 2rem;
+        line-height: 1.4em;
         text-align: left;
-        letter-spacing: 1.5px;
+        letter-spacing: 0.02em;
         font-family: 'Yusei Magic', sans-serif;
         color:#292828;
-        font-size: 1.2rem;
+        font-size: 1.3em;
+        margin-bottom: 0.5em;
     }
     }
 
