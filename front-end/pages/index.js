@@ -43,14 +43,16 @@ export default function Home({ posts}) {
 
     <Layout>
       <Head>
-      <Meta 
-title="villagerant" 
-desc="Stories of someone with too much time to spend"
-canonical="https://www.villagerant.xyz"
-/> 
-
+    <title>villagerant</title>
+      <meta name="description" content="Stories of someone with too much time to spend" />
       <meta name="robots" content="index, follow"/>
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <link rel="canonical" href="https://www.villagerant.xyz" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:site" content="@villagerant" />
+      <meta name="twitter:title" content="villagerant" />
+      <meta name="twitter:description" content="stories of someone with too much time to spend" />
+      <meta name="twitter:image" content="https://unsplash.com/photos/0drW3CxGkfw" />
                 </Head>
 
     <div className={styles.container}>

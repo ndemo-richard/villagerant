@@ -9,8 +9,6 @@ const Layout = props =>{
         <div className={styles.Layout}>
             
             <Header/>
-         
-
             <div >{props.children}</div>
 
            {/* <Footer footer={props.children}/>*/}
