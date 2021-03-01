@@ -42,7 +42,9 @@ export default function Home({ posts}) {
 
     <Layout>
       <Head><title> villagerant</title>
-                <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <meta name="description" content="Stories of someone with too much time to spend"></meta>
+      <meta name="robots" content="index, follow"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 </Head>
 
     <div className={styles.container}>
