@@ -7,6 +7,7 @@ import imageUrlBuilder from '@sanity/image-url';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import BlockContent from '@sanity/block-content-to-react';
+import Meta from '../partials/seo-meta.js'
 
 export default function Home({ posts}) {
 
@@ -41,8 +42,13 @@ export default function Home({ posts}) {
 
 
     <Layout>
-      <Head><title> villagerant</title>
-      <meta name="description" content="Stories of someone with too much time to spend"></meta>
+      <Head>
+      <Meta 
+title="villagerant" 
+desc="Stories of someone with too much time to spend"
+canonical="https://www.villagerant.xyz"
+/> 
+
       <meta name="robots" content="index, follow"/>
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 </Head>
