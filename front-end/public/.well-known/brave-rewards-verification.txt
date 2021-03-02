@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: villagerant.xyz
+Token: e3017e6fbadcf19b6fe00e5f206e975b97bc6a0111606f8ca0ebdc44c88ca359
