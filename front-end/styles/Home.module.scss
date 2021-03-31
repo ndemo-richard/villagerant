@@ -64,6 +64,7 @@
     font-size: 1em;
     overflow: hidden;
     margin: 0;
+
   }
   .avatar_date{
     display: flex;
@@ -89,7 +90,7 @@
 
   p {
     display: -webkit-box;
-    -webkit-line-clamp: 1;
+    -webkit-line-clamp: none;
     -webkit-box-orient: vertical;
    margin: 0;
     overflow: hidden;
