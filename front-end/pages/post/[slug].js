@@ -22,8 +22,8 @@ export const Post = ({ _id, title, body, image,publishedAt, authorImage, authorN
             projectId: 'om0uizd8',
             dataset:'production',
         });
-        setImageUrl(imgUrlBuilder.image(image)); 
-         
+        setImageUrl(imgUrlBuilder.image(image));
+
     },  []);
 
 
@@ -34,7 +34,7 @@ export const Post = ({ _id, title, body, image,publishedAt, authorImage, authorN
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
             </Head>
         <div className={styles.container}>
-        
+
             <div className={styles.main}>
                 <h1 className={styles.post_title}>{title}</h1>
                 {imageUrl && <img className={ styles.mainImage} src={imageUrl} />}
@@ -51,7 +51,7 @@ export const Post = ({ _id, title, body, image,publishedAt, authorImage, authorN
                   <div className={styles.avatarFont}>{authorName}</div>
              </div>
               <Date dateString={publishedAt}/>
-              </div>  
+              </div>
 
               <div className={styles.commentContainer}>
                  <div>
@@ -60,11 +60,11 @@ export const Post = ({ _id, title, body, image,publishedAt, authorImage, authorN
                  <div>
                  <Form _id={_id} />
                  </div>
-                  
-                  </div> 
+
+                  </div>
             </div>
             <div>
-                
+
             </div>
         </div>
         </Layout>
@@ -79,11 +79,11 @@ export const getServerSideProps = async pageContext =>{
             notFound:true
         }
     }
-    const query = encodeURIComponent(`*[ _type == "post" && slug.current == "${pageSlug}"]{_id,title,body,mainImage,publishedAt,"authorImage":author->image,"authorName":author->name,'comments': *[_type == "comment" && post._ref == ^._id && approved == true]{
-        _id, 
-        name, 
-        email, 
-        comment, 
+    const query = encodeURIComponent(`*[ _type == "post" && slug.current == "${pageSlug}"]{_id,title,body,poster,publishedAt,"authorImage":author->image,"authorName":author->name,'comments': *[_type == "comment" && post._ref == ^._id && approved == true]{
+        _id,
+        name,
+        email,
+        comment,
         _createdAt
     }}`)
     const url= `https://om0uizd8.api.sanity.io/v1/data/query/production?query=${query}`;
@@ -100,7 +100,7 @@ export const getServerSideProps = async pageContext =>{
             props:{
                 body:post.body,
                 title:post.title,
-                image:post.mainImage,
+                image:post.poster,
                 publishedAt:post.publishedAt,
                 authorName:post.authorName,
                 authorImage:post.authorImage,
